@@ -29,6 +29,7 @@ export default function Home() {
 
      <div className='home-container'>
       <div className='user-card'>
+        <h1 className='heading'>Welcome to Learning Managmnet System</h1>
         <h2> Welcome,{user && user.name}</h2>
         <button className='logout-btn' onClick={handleLogout}>Logout</button>
         {user && user.role=='admin' ? <button className='admin-btn' onClick={gotoAdmin}>Go To admin</button> :''}
