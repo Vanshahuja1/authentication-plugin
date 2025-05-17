@@ -1,0 +1,170 @@
+/* General Container Styles */
+.register-container,
+.login-container,
+.admin-container {
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Admin container is wider */
+.admin-container {
+  max-width: 800px;
+  padding: 40px 30px;
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  margin-bottom: 28px;
+  color: #222;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+/* Input Groups */
+.input-group {
+  margin-bottom: 22px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Inputs and Selects */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 90%;
+  padding: 12px 14px;
+  border-radius: 6px;
+  border: 1.8px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.25s ease;
+  outline-offset: 2px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.4);
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 14px 0;
+  border: none;
+  border-radius: 7px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 5px 12px rgba(0, 123, 255, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 16px rgba(0, 86, 179, 0.6);
+}
+
+/* Register / Login Links */
+.register-link,
+.login-link {
+  text-align: center;
+  margin-top: 22px;
+  font-size: 0.95rem;
+  color: #777;
+}
+
+.register-link a,
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: text-decoration 0.25s ease;
+}
+
+.register-link a:hover,
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Admin Table Styling */
+.admin-container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  color: #444;
+  table-layout: fixed; /* Keep columns aligned */
+}
+
+.admin-container th, 
+.admin-container td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  word-wrap: break-word; /* Prevent overflow */
+  vertical-align: middle;
+}
+
+/* Set specific widths for columns to help alignment */
+.admin-container th:nth-child(1), /* Name */
+.admin-container td:nth-child(1) {
+  width: 30%;
+}
+
+.admin-container th:nth-child(2), /* Email */
+.admin-container td:nth-child(2) {
+  width: 35%;
+}
+
+.admin-container th:nth-child(3), /* Role */
+.admin-container td:nth-child(3) {
+  width: 15%;
+}
+
+.admin-container th:nth-child(4), /* Action */
+.admin-container td:nth-child(4) {
+  width: 20%;
+  text-align: center; /* Center delete button */
+}
+
+/* Style delete button */
+.admin-container button {
+  width: auto;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background-color: #dc3545;
+  box-shadow: 0 3px 10px rgba(220, 53, 69, 0.4);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-container button:hover {
+  background-color: #c82333;
+  box-shadow: 0 4px 14px rgba(200, 35, 51, 0.6);
+}
+
+/* Add margin between tables */
+.admin-container h3 {
+  margin-top: 40px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #333;
+}
