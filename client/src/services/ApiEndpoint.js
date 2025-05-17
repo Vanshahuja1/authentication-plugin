@@ -8,10 +8,18 @@ const instance = axios.create({
     withCredentials:true
 })
 
-export const get = (url, params) => instance.get(url, { params });
-export const post = (url, data) => instance.post(url, data);
-export const put = (url, data) => instance.put(url, data);
-export const deleteUser = (url) => instance.delete(url);
+export const get = (url, params) =>
+  instance.get(url, { params, withCredentials: true });
+
+export const post = (url, data) =>
+  instance.post(url, data, { withCredentials: true });
+
+export const put = (url, data) =>
+  instance.put(url, data, { withCredentials: true });
+
+export const deleteUser = (url) =>
+  instance.delete(url, { withCredentials: true });
+
 
 
   instance.interceptors.request.use(function (config) {
